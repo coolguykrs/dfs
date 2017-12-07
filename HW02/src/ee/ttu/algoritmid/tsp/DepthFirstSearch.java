@@ -7,15 +7,6 @@ import java.util.stream.Collectors;
 
 public class DepthFirstSearch {
 
-    public static void main(String[] args) {
-        try {
-            TSP tsp = new TSP();
-            tsp.depthFirst(MatrixLoader.loadFile("eesti.in", 4));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     private int nrOfCities;
     private int nrOfNodesChecked;
     private int bestDistance;
